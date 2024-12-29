@@ -13,8 +13,8 @@ export default function Landing() {
       React Features
       </Typography>
       <ul className='features'>
-        <li className='list-item' onClick={()=>navigate("/Filter")}><p>Filtering on a list of items</p></li>
-        <li className='list-item'><p>Searching on a list of items</p></li>
+        <li className='list-item' onClick={()=>navigate("/Filter")}><p>Filter Search Sort on a list of items</p></li>
+        <li className='list-item' onClick={()=>navigate("/InfiniteScroll")}><p>Infinite Scrolling</p></li>
       </ul>
      </div>
      </Box>

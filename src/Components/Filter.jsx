@@ -53,6 +53,16 @@ export default function Filter() {
               (a, b) => b.vote_average - a.vote_average
             );
           }
+          else if (sortItem === "name-asc") {
+            sortedData = sortedData.sort(
+              (b,a) => a.title.localeCompare(b.title)
+            );
+          }
+          else if (sortItem === "name-dsc") {
+            sortedData = sortedData.sort(
+              (a, b) => b.title.localeCompare(a.title)
+            );
+          }
           setMovieData(sortedData);
         }
         if(filterItem!=""){
@@ -104,6 +114,8 @@ export default function Filter() {
           <MenuItem value={"rel-dsc"}>Release Date Desc</MenuItem>
           <MenuItem value={"rat-asc"}>Rating Asc</MenuItem>
           <MenuItem value={"rat-dsc"}>Rating Desc</MenuItem>
+          <MenuItem value={"name-asc"}>Name Asc</MenuItem>
+          <MenuItem value={"name-dsc"}>Name Desc</MenuItem>
         </Select>
       </FormControl>
       <FormControl sx={{ width: "200px", margin: "20px" }}>
