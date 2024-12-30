@@ -15,6 +15,7 @@ export default function Landing() {
       <ul className='features'>
         <li className='list-item' onClick={()=>navigate("/Filter")}><p>Filter Search Sort on a list of items</p></li>
         <li className='list-item' onClick={()=>navigate("/InfiniteScroll")}><p>Infinite Scrolling</p></li>
+        <li className='list-item' onClick={()=>navigate("/file")}><p>File Upload and Download</p></li>
       </ul>
      </div>
      </Box>
